@@ -1,0 +1,70 @@
+body {
+  min-height: 50vh;
+	padding: 3vh;
+	box-sizing: border-box;
+}
+form,h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root {
+  height: 100%;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	height: 100%;
+	justify-content: space-around;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  box-shadow:inset 0 0 5px #ddd;
+}
+.clicked {
+  background: #ddd;
+  box-shadow:inset 0 0 5px #fff;
+}
+.square-container {
+  position: relative;
+}
+.superman-cell,.square-cell {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.superman-cell {
+  opacity: 0.5;
+  z-index: 10;
+}
+.board-row {
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  width: max-content;
+}
+.table-container{
+  flex-direction: column;
+
+}
+.table-container-big{
+  flex-direction: column;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  align-self: left;
+}
